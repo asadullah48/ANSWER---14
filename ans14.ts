@@ -7,4 +7,10 @@ let guestList: string [] = ["Ifraheem", "Mansoor", "Mohsin", "Sultan", "Usman", 
 guestList .forEach(guestList =>{
     console.log(`Assalaam O Alikum ${guestList}, Kindly join me tonight for dinner`);
 });
-
+let unableToAttend = "Mohsin";
+console.log(`${unableToAttend} can't make it to dinner.`);
+let newGuest = "Kamal";
+guestList[guestList.indexOf(unableToAttend)] = newGuest;
+guestList.forEach(guest => {
+    console.log(`Assalaam O alikum ${guestList}, Kindly join me for dinner?`);
+});
